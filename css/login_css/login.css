@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* cores da logo/site */
+
+:root {
+    --color-pink: #fba4eb;
+    --color-blue: #54c3c4;
+    --color-purple: #755ab4;
+    --color-white: #ffffff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-pink);
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+
+.circle {
+    content: '';
+    border-radius: 999px;
+    background-color: var(--color-white);
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    z-index: -1;
+    top: -115%;
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+}
+
+.inputs-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    width: 80vw;
+    height: 30vh;
+    background-color: var(--color-white);
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.205));
+    border-radius: 20px;
+    position: relative;
+}
+
+p {
+    color: var(--color-blue);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.user-box {
+    position: relative;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-box label {
+    position: absolute;
+    top: 2.5vh;
+    left: 1vh;
+    color: var(--color-blue);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+.user-box input {
+    border: 1px solid var(--color-blue);
+    border-radius: 20px;
+    line-height: 6vh;
+    padding: 0 5px 0 40px;
+    width: 65vw;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+
+#login-btn {
+    border: 10px solid var(--color-white);
+    border-radius: 999px;
+    background-color: var(--color-blue);
+    width: 10vh;
+    height: 10vh;
+    padding: 2vh;
+    position: relative;
+    bottom: -4vh;
+    color: var(--color-white);
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+#login-btn:hover{
+    background-color: var(--color-pink);
+}
+
+
+/* Media Querys */
+
+@media ((min-width: 1025px) and (max-width: 2560px)){
+
+    .circle{
+        width: 200%;
+        height: 200%;
+        top: -130%;
+    }
+
+    .inputs-area {
+        width: 30vw;
+    }
+
+    .user-box input {
+        width: 25vw;
+    }
+
+
+}
+
+/* @media ((min-width: 1025px) and (max-width: 1440px)){
+
+    .circle{
+        width: 200%;
+        height: 200%;
+        top: -130%;
+    }
+
+    .inputs-area {
+        width: 30vw;
+    }
+
+    .user-box input {
+        width: 25vw;
+    }
+
+
+} */
+
+@media ((min-width: 481px) and (max-width: 1024px)){
+
+    .inputs-area {
+        width: 60vw;
+    }
+
+    .user-box input {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 480px){
+    .logo {
+        width: 350px;
+    }
+}
+
+
+
+
+
+
+
+/* Media Querys */
